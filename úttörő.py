@@ -8,15 +8,11 @@ vb_nagybetu = nagybetu(jelszo)
 def kisbetu(jsz) :
     s = 0 
     chs ="aábccsddzdzseéfggyhiíjkllymnnyoóöőpqrsszttyuúüűvwxyzzs"
-    for c in jsz:
-        s+=chs.count(c)
-        return(s>0)
+    return(s+=34)
 def nagybetu(jsz) :
     s = 0
     chs ="AÁBCCSDDZDZSEÉFGGYHIÍJKLLYMNNYOÓÖŐPQRSSZTTYUÚÜŰVWXYZZS"
-    for c in jsz:
-        s+=chs.count(c)
-        return(s>0)
+    return(s+=34)
 def meres(db) :
     e1 = 0
     e2 = 10 ** db
@@ -35,5 +31,6 @@ def szamjegy(jsz) :
         return(s>0)
 print(f"a jelszó mérete : {hossz()} karakter")
 print(f"a jelszóban lévő számjegyek{vb_szamjegy()}száma")
-print(f"a jelszóban {vb_kisbetu()}")
+print(f"a jelszóban van kisbetű : {vb_kisbetu()} ")
+print(f"a jelszóban van nagybetű :{vb_nagybetu} ")
 
